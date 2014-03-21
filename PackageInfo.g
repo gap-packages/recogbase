@@ -1,101 +1,131 @@
 #############################################################################
 ##  
-##  Demo PackageInfo.g for the GitHubPagesForGAP
-##
+##  PackageInfo.g for the package `recogbase'
+##                                                            Max Neunhoeffer
+##                                                                Akos Seress
+##  (created from Frank Luebeck's PackageInfo.g template file)
+##  
+#############################################################################
 
 SetPackageInfo( rec(
 
-PackageName := "GitHubPagesForGAP",
+PackageName := "recogbase",
 
-Subtitle := "A GitHubPages generator for GAP packages",
-Version := "0.1",
-Date := "21/03/2014", # dd/mm/yyyy format
+Subtitle := "A framework for group recognition",
 
+Version := "1.2",
+
+##  Release date of the current version in dd/mm/yyyy format.
+Date := "28/05/2012",
+
+##  Information about authors and maintainers.
 Persons := [
-  rec(
-    LastName      := "Horn",
+  rec( 
+    LastName      := "Neunhoeffer",
     FirstNames    := "Max",
     IsAuthor      := true,
     IsMaintainer  := true,
-    Email         := "max.horn@math.uni-giessen.de",
-    WWWHome       := "http://www.quendi.de/math",
-    PostalAddress := Concatenation(
-                       "AG Algebra\n",
-                       "Mathematisches Institut\n",
-                       "Justus-Liebig-Universit‰t Gieﬂen\n",
-                       "Arndtstraﬂe 2\n",
-                       "35392 Gieﬂen\n",
-                       "Germany" ),
-    Place         := "Gieﬂen",
-    Institution   := "Justus-Liebig-Universit‰t Gieﬂen"
+    Email         := "neunhoef@mcs.st-and.ac.uk",
+    WWWHome       := "http://www-groups.mcs.st-and.ac.uk/~neunhoef/",
+    PostalAddress := Concatenation( [
+                       "School of Mathematics and Statistics\n",
+                       "Mathematical Institute\n",
+                       "North Haugh\n",
+                       "St Andrews, Fife KY16 9SS\n",
+                       "Scotland, UK" ] ),
+    Place         := "St Andrews",
+    Institution   := "University of St Andrews"
   ),
-
-  rec(
-    LastName      := "Thor",
-    FirstNames    := "A. U.",
+  rec( 
+    LastName      := "Seress",
+    FirstNames    := "Akos",
     IsAuthor      := true,
-    IsMaintainer  := false,
-    #Email         := "author@example.com",
-  ),
-
-  rec(
-    LastName      := "Itor",
-    FirstNames    := "Jan",
-    IsAuthor      := false,
     IsMaintainer  := true,
-    #Email         := "janitor@example.com",
+    Email         := "akos@math.ohio-state.edu",
+    WWWHome       := "http://www.math.ohio-state.edu/~akos/",
+    PostalAddress := Concatenation( [
+                       "Akos Seress\n",
+                       "714 Math Tower\n",
+                       "231 W 18th ave\n",
+                       "Columbus, OH  43210\n",
+                       "USA" ] ),
+    Place         := "Columbus",
+    Institution   := "Ohio-state University at Columbus"
   ),
 ],
 
-Status := "other",
+##  Status information. Currently the following cases are recognized:
+##    "accepted"      for successfully refereed packages
+##    "deposited"     for packages for which the GAP developers agreed 
+##                    to distribute them with the core GAP system
+##    "dev"           for development versions of packages 
+##    "other"         for all other packages
+##
+# Status := "accepted",
+Status := "deposited",
 
-# The following are not strictly necessary in your own PackageInfo.g
-# (in the sense that update.g only looks at the usual fields
-# like PackageWWWHome, ArchiveURL etc.). But they are convenient
-# if you use exactly the scheme for your package website that we propose.
-GithubUser := "fingolfin",
-GithubRepository := ~.PackageName,
-GithubWWW := Concatenation("https://github.com/", ~.GithubUser, "/", ~.GithubRepository),
+##  You must provide the next two entries if and only if the status is 
+##  "accepted" because is was successfully refereed:
+# format: 'name (place)'
+# CommunicatedBy := "Mike Atkinson (St. Andrews)",
+#CommunicatedBy := "",
+# format: mm/yyyy
+# AcceptDate := "08/1999",
+#AcceptDate := "",
 
-PackageWWWHome := Concatenation("http://", ~.GithubUser, ".github.io/", ~.GithubRepository, "/"),
-README_URL     := Concatenation( ~.PackageWWWHome, "README" ),
-PackageInfoURL := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
-# The following assumes you are using the Github releases system. If not, adjust
-# it accordingly.
-ArchiveURL     := Concatenation(~.GithubWWW,
-                    "/releases/download/v", ~.Version, "/",
-                    ~.GithubRepository, "-", ~.Version),
+BaseURL := "http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/",
 
-ArchiveFormats := ".tar.gz .tar.bz2",
+PackageWWWHome := Concatenation( ~.BaseURL, "recogbase.html" ),
+ArchiveURL     := Concatenation( ~.BaseURL, "recogbase/recogbase-", ~.Version ),
+README_URL     := Concatenation( ~.BaseURL, "recogbase/README.recogbase" ),
+PackageInfoURL := Concatenation( ~.BaseURL, "recogbase/PackageInfo.g" ),
 
-AbstractHTML := 
-  "This is a pseudo package that contains no actual\
-  <span class=\"pkgname\">GAP</span> code. Instead, it is a template for other\
-  GAP packages that allows to quickly setup GitHub pages.",
+ArchiveFormats := ".tar.gz",
+
+AbstractHTML := "<b>Warning:</b> This package is still under development and \
+this version is to be considered a working, but preliminary one. <p/> \
+This package provides a framework to implement group \
+recognition methods in a generic way. In particular, it is suitable \
+for permutation groups, matrix groups, projective groups and blackbox \
+groups. The accompanying <span class=\"pkgname\">recog</span> package \
+contains the necessary methods for actual recognition.",
 
 PackageDoc := rec(
-  BookName  := "GitHubPagesForGAP",
+  BookName  := "recogbase",
   ArchiveURLSubset := ["doc"],
   HTMLStart := "doc/chap0.html",
   PDFFile   := "doc/manual.pdf",
   SixFile   := "doc/manual.six",
-  LongTitle := "A GitHubPages generator for GAP packages",
+  LongTitle := "A framework for group recognition",
 ),
 
-# The following dependencies are fake and for testing / demo purposes
 Dependencies := rec(
-  GAP := ">=4.5.5",
+  GAP := ">=4.4.12",
   NeededOtherPackages := [
     ["GAPDoc", ">= 1.2"],
-    ["IO", ">= 4.1"],
+    ["Forms", ">= 1.2"],
+    ["genss", ">= 1.3"],
+    ["Orb", ">= 3.4"],
+    ["FactInt", ">= 1.5.2"],
+    ["AtlasRep", ">= 1.4.0"],
   ],
-  SuggestedOtherPackages := [["orb", ">= 4.2"]],
+  SuggestedOtherPackages := [
+    ["recog", ">= 1.0"]
+  ],
   ExternalConditions := []
 ),
 
 AvailabilityTest := ReturnTrue,
 
-Keywords := ["GitHub pages", "GAP"]
+##  *Optional*, but recommended: path relative to package root to a file which 
+##  contains as many tests of the package functionality as sensible.
+#TestFile := "tst/testall.g",
+
+##  *Optional*: Here you can list some keyword related to the topic 
+##  of the package.
+Keywords := ["group recognition", "matrix group recognition",
+"permutation group", "black box group", "composition tree", 
+"Aschbacher classes", "method selection"]
 
 ));
 

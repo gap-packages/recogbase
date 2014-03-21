@@ -1,1 +1,128 @@
-Placeholder
+  
+  
+                            [1XGAP 4 Package [5Xrecogbase[105X[101X
+  
+  
+                       [1XA framework for group recognition[101X
+  
+  
+                                      1.2
+  
+  
+                                    May 2012
+  
+  
+                                Max Neunhoeffer
+  
+                                  Ákos Seress
+  
+  
+  
+  Max Neunhoeffer
+      Email:    [7Xmailto:neunhoef@mcs.st-and.ac.uk[107X
+      Homepage: [7Xhttp://www-groups.mcs.st-and.ac.uk/~neunhoef/[107X
+      Address:  [33X[0;14YSchool  of Mathematics and Statistics, Mathematical Institute,
+                North Haugh, St Andrews, Fife, KY16 9SS, Scotland, UK[133X
+  
+  
+  Ákos Seress
+      Email:    [7Xmailto:akos@math.ohio-state.edu[107X
+      Homepage: [7Xhttp://www.math.ohio-state.edu/people/display/display.php?ID=302[107X
+      Address:  [33X[0;14YDepartment  of  Mathematics,  The Ohio State University, 231 W
+                18th Avenue, Columbus, OH 43210 USA[133X
+  
+  
+  
+  -------------------------------------------------------
+  [1XCopyright[101X
+  [33X[0;0Y© 2005-2011 by Max Neunhöffer and Ákos Seress[133X
+  
+  [33X[0;0YThis  package  may  be distributed under the terms and conditions of the GNU
+  Public License Version 3 or (at your option) any later version.[133X
+  
+  
+  -------------------------------------------------------
+  
+  
+  [1XContents (recogbase)[101X
+  
+  1 [33X[0;0YIntroduction[133X
+    1.1 [33X[0;0YPhilosophy[133X
+    1.2 [33X[0;0YOverview over this manual[133X
+  2 [33X[0;0YInstallation of the [5Xrecogbase[105X-Package[133X
+  3 [33X[0;0YMethod Selection[133X
+    3.1 [33X[0;0YWhat are methods?[133X
+      3.1-1 AddMethod
+    3.2 [33X[0;0YHow methods are called[133X
+      3.2-1 CallMethods
+  4 [33X[0;0YGroup Recognition[133X
+    4.1 [33X[0;0YThe recursive procedure[133X
+      4.1-1 RecogniseGeneric
+      4.1-2 RecognisePermGroup
+      4.1-3 RecogniseMatrixGroup
+      4.1-4 RecogniseProjectiveGroup
+      4.1-5 RecogniseBBGroup
+      4.1-6 RecogniseGroup
+      4.1-7 FindHomDbPerm
+      4.1-8 FindHomMethodsPerm
+      4.1-9 SLPforElementFuncsPerm
+      4.1-10 FindHomDbMatrix
+      4.1-11 FindHomMethodsMatrix
+      4.1-12 SLPforElementFuncsMatrix
+      4.1-13 FindHomDbProjective
+      4.1-14 FindHomMethodsProjective
+      4.1-15 SLPforElementFuncsProjective
+      4.1-16 FindHomDbBB
+      4.1-17 FindHomMethodsBB
+      4.1-18 SLPforElementFuncsBB
+      4.1-19 TryFindHomMethod
+    4.2 [33X[0;0YRecognition info records[133X
+      4.2-1 RecognitionInfoFamily
+      4.2-2 IsRecognitionInfo
+      4.2-3 IsLeaf
+      4.2-4 IsReady
+      4.2-5 Grp
+      4.2-6 Homom
+      4.2-7 NiceGens
+      4.2-8 pregensfac
+      4.2-9 RIFac
+      4.2-10 RIKer
+      4.2-11 RIParent
+      4.2-12 fhmethsel
+      4.2-13 slpforelement
+      4.2-14 SLPforElement
+      4.2-15 StdPresentation
+      4.2-16 methodsforfactor
+      4.2-17 calcnicegens
+      4.2-18 CalcNiceGensGeneric
+      4.2-19 CalcNiceGensHomNode
+      4.2-20 CalcNiceGens
+      4.2-21 slptonice
+      4.2-22 gensN
+      4.2-23 findgensNmeth
+      4.2-24 FindKernelRandom
+      4.2-25 FindKernelDoNothing
+      4.2-26 FindKernelFastNormalClosure
+      4.2-27 gensNslp
+      4.2-28 immediateverification
+      4.2-29 forkernel
+      4.2-30 forfactor
+      4.2-31 isone
+      4.2-32 isequal
+      4.2-33 [33X[0;0YOther components of recognition info records[133X
+    4.3 [33X[0;0YMethods to find homomorphisms[133X
+      4.3-1 FindHomomorphism
+      4.3-2 SLPforElementGeneric
+    4.4 [33X[0;0YConventions for the recognition of permutation groups[133X
+    4.5 [33X[0;0YConventions for the recognition of matrix groups[133X
+    4.6 [33X[0;0YConventions for the recognition of projective groups[133X
+    4.7 [33X[0;0YConventions for the recognition of black box groups[133X
+  5 [33X[0;0YAfter successful recognition[133X
+    5.1 [33X[0;0YFunctions and methods for recognition info records[133X
+      5.1-1 SLPforNiceGens
+      5.1-2 \in
+      5.1-3 Size
+      5.1-4 DisplayCompositionFactors
+  
+  
+  [32X

@@ -1,0 +1,21 @@
+  
+  [1X2 [33X[0;0YInstallation of the [5Xrecogbase[105X[101X[1X-Package[133X[101X
+  
+  [33X[0;0YTo  install  this package just extract the package's archive file to the GAP
+  [11Xpkg[111X directory.[133X
+  
+  [33X[0;0YBy  default the [5Xrecogbase[105X package is not automatically loaded by [5XGAP[105X when it
+  is  installed.  You  must  load  the  package with [10XLoadPackage("recogbase");[110X
+  before its functions become available.[133X
+  
+  [33X[0;0YUsually,  this  package is only usable if you also install the [5Xrecog[105X package
+  containing  all the implemented recognition methods. Since the [5Xrecog[105X package
+  then  automatically  loads  the [5Xrecogbase[105X one only has to load both packages
+  with [10XLoadPackage("recog");[110X.[133X
+  
+  [33X[0;0YPlease,  send  us an e-mail if you have any questions, remarks, suggestions,
+  etc. concerning this package. Also, we would like to hear about applications
+  of this package.[133X
+  
+  [33X[0;0YMax Neunhöffer and Ákos Seress[133X
+  
