@@ -30,3 +30,9 @@
   and  might  be  useful  in  other  circumstances.  Finally,  in Chapter [14X5[114X we
   describe, what one can do with a completed recognition tree.[133X
   
+  
+  [1X1.3 [33X[0;0YFeedback[133X[101X
+  
+  [33X[0;0YFor  bug  reports,  feature  requests  and suggestions, please use our issue
+  tracker ([7Xhttps://github.com/neunhoef/recogbase/issues[107X).[133X
+  

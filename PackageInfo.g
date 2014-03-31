@@ -10,13 +10,9 @@
 SetPackageInfo( rec(
 
 PackageName := "recogbase",
-
 Subtitle := "A framework for group recognition",
-
-Version := "1.2",
-
-##  Release date of the current version in dd/mm/yyyy format.
-Date := "28/05/2012",
+Version := "1.2.1",
+Date := "31/04/2014", # dd/mm/yyyy format
 
 ##  Information about authors and maintainers.
 Persons := [
@@ -24,7 +20,7 @@ Persons := [
     LastName      := "Neunhoeffer",
     FirstNames    := "Max",
     IsAuthor      := true,
-    IsMaintainer  := true,
+    IsMaintainer  := false,
     Email         := "neunhoef@mcs.st-and.ac.uk",
     WWWHome       := "http://www-groups.mcs.st-and.ac.uk/~neunhoef/",
     PostalAddress := Concatenation( [
@@ -40,7 +36,7 @@ Persons := [
     LastName      := "Seress",
     FirstNames    := "Akos",
     IsAuthor      := true,
-    IsMaintainer  := true,
+    IsMaintainer  := false,
     Email         := "akos@math.ohio-state.edu",
     WWWHome       := "http://www.math.ohio-state.edu/~akos/",
     PostalAddress := Concatenation( [
@@ -73,14 +69,13 @@ Status := "deposited",
 # AcceptDate := "08/1999",
 #AcceptDate := "",
 
-BaseURL := "http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/",
-
-PackageWWWHome := Concatenation( ~.BaseURL, "recogbase.html" ),
-ArchiveURL     := Concatenation( ~.BaseURL, "recogbase/recogbase-", ~.Version ),
-README_URL     := Concatenation( ~.BaseURL, "recogbase/README.recogbase" ),
-PackageInfoURL := Concatenation( ~.BaseURL, "recogbase/PackageInfo.g" ),
-
-ArchiveFormats := ".tar.gz",
+PackageWWWHome := "http://neunhoef.github.io/recogbase/",
+README_URL     := Concatenation(~.PackageWWWHome, "README"),
+PackageInfoURL := Concatenation(~.PackageWWWHome, "PackageInfo.g"),
+ArchiveURL     := Concatenation("https://github.com/neunhoef/recogbase/",
+                                "releases/download/v", ~.Version,
+                                "/recogbase-", ~.Version),
+ArchiveFormats := ".tar.gz .tar.bz2",
 
 AbstractHTML := "<b>Warning:</b> This package is still under development and \
 this version is to be considered a working, but preliminary one. <p/> \

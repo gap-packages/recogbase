@@ -1,15 +1,9 @@
 name: recogbase
-version: 1.2
-date: 28/05/2012
+version: 1.2.1
+date: 31/04/2014
 description: A framework for group recognition
 
 authors:
-    - name: Max Neunhoeffer
-      url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/
-    - name: Akos Seress
-      url: http://www.math.ohio-state.edu/~akos/
-
-maintainers:
     - name: Max Neunhoeffer
       url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/
     - name: Akos Seress
@@ -35,13 +29,15 @@ suggested-pkgs:
     - name: "recog"
       version: ">= 1.0"
 
-www: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/recogbase.html
-readme: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/recogbase/README.recogbase
-packageinfo: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/recogbase/PackageInfo.g
+www: http://neunhoef.github.io/recogbase/
+readme: http://neunhoef.github.io/recogbase/README
+packageinfo: http://neunhoef.github.io/recogbase/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: http://www-groups.mcs.st-and.ac.uk/~neunhoef/Computer/Software/Gap/recogbase/recogbase-1.2.tar.gz
+      url: https://github.com/neunhoef/recogbase/releases/download/v1.2.1/recogbase-1.2.1.tar.gz
+    - name: .tar.bz2
+      url: https://github.com/neunhoef/recogbase/releases/download/v1.2.1/recogbase-1.2.1.tar.bz2
 
 abstract: <b>Warning:</b> This package is still under development and this version is to be considered a working, but preliminary one. <p/> This package provides a framework to implement group recognition methods in a generic way. In particular, it is suitable for permutation groups, matrix groups, projective groups and blackbox groups. The accompanying <span class="pkgname">recog</span> package contains the necessary methods for actual recognition.
 
