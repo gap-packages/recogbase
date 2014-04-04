@@ -1,6 +1,6 @@
 name: recogbase
-version: 1.2.1
-date: 31/04/2014
+version: 1.2.2
+date: 04/04/2014
 description: A framework for group recognition
 
 authors:
@@ -42,9 +42,9 @@ packageinfo: http://neunhoef.github.io/recogbase/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/neunhoef/recogbase/releases/download/v1.2.1/recogbase-1.2.1.tar.gz
+      url: https://github.com/neunhoef/recogbase/releases/download/v1.2.2/recogbase-1.2.2.tar.gz
     - name: .tar.bz2
-      url: https://github.com/neunhoef/recogbase/releases/download/v1.2.1/recogbase-1.2.1.tar.bz2
+      url: https://github.com/neunhoef/recogbase/releases/download/v1.2.2/recogbase-1.2.2.tar.bz2
 
 abstract: <b>Warning:</b> This package is still under development and this version is to be considered a working, but preliminary one. <p/> This package provides a framework to implement group recognition methods in a generic way. In particular, it is suitable for permutation groups, matrix groups, projective groups and blackbox groups. The accompanying <span class="pkgname">recog</span> package contains the necessary methods for actual recognition.
 
