@@ -1,41 +1,48 @@
   
   
-                            [1XGAP 4 Package [5Xrecogbase[105X[101X
+                                  [1X recogbase [101X
   
   
-                       [1XA framework for group recognition[101X
+                      [1X A framework for group recognition [101X
   
   
-                                     1.2.2
+                                     1.2.3
   
   
-                                   March 2014
+                                   24/09/2014
   
   
-                                Max Neunhoeffer
+                                 Max Neunhöffer
   
                                   Ákos Seress
   
+                                    Max Horn
   
   
-  Max Neunhoeffer
-      Email:    [7Xmailto:neunhoef@mcs.st-and.ac.uk[107X
-      Homepage: [7Xhttp://www-groups.mcs.st-and.ac.uk/~neunhoef/[107X
-      Address:  [33X[0;14YSchool  of Mathematics and Statistics, Mathematical Institute,
-                North Haugh, St Andrews, Fife, KY16 9SS, Scotland, UK[133X
+  
+  Max Neunhöffer
+      Email:    [7Xmailto:max@9hoeffer.de[107X
+      Homepage: [7Xhttp://www-groups.mcs.st-and.ac.uk/~neunhoef[107X
+      Address:  [33X[0;14YGustav-Freytag-Straße 40[133X
+                [33X[0;14Y50354 Hürth[133X
+                [33X[0;14YGermany[133X
   
   
-  Ákos Seress
-      Email:    [7Xmailto:akos@math.ohio-state.edu[107X
-      Homepage: [7Xhttp://www.math.ohio-state.edu/people/display/display.php?ID=302[107X
-      Address:  [33X[0;14YDepartment  of  Mathematics,  The Ohio State University, 231 W
-                18th Avenue, Columbus, OH 43210 USA[133X
+  Max Horn
+      Email:    [7Xmailto:max.horn@math.uni-giessen.de[107X
+      Homepage: [7Xhttp://www.quendi.de/math[107X
+      Address:  [33X[0;14YAG Algebra[133X
+                [33X[0;14YMathematisches Institut[133X
+                [33X[0;14YJustus-Liebig-Universität Gießen[133X
+                [33X[0;14YArndtstraße 2[133X
+                [33X[0;14Y35392 Gießen[133X
+                [33X[0;14YGermany[133X
   
   
   
   -------------------------------------------------------
   [1XCopyright[101X
-  [33X[0;0Y© 2005-2011 by Max Neunhöffer and Ákos Seress[133X
+  [33X[0;0Y© 2005-2014 by Max Neunhöffer and Ákos Seress[133X
   
   [33X[0;0YThis  package  may  be distributed under the terms and conditions of the GNU
   Public License Version 3 or (at your option) any later version.[133X
