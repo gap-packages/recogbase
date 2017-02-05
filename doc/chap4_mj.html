@@ -351,7 +351,7 @@
 <h5>4.2-2 IsRecognitionInfo</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; IsRecognitionInfo</code></td><td class="tdright">( category )</td></tr></table></div>
-<p>and is <code class="func">IsAttributeStoringRep</code> (<a href="../../../doc/ref/chap80_mj.html#X874AF11D864AEC1B"><span class="RefLink">Reference: IsAttributeStoringRep</span></a>), such that we can define attributes for it, the values of which are stored once they are known. A recognition info record always represents a whole binary tree of such records, see the attributes <code class="func">RIFac</code> (<a href="chap4_mj.html#X85D69105867342C7"><span class="RefLink">4.2-9</span></a>) and <code class="func">RIKer</code> (<a href="chap4_mj.html#X85B6D66F7BD0E964"><span class="RefLink">4.2-10</span></a>) below.</p>
+<p>and is <code class="func">IsAttributeStoringRep</code> (<a href="https://www.gap-system.org/Manuals/doc/ref/chap80_mj.html#X874AF11D864AEC1B"><span class="RefLink">Reference: IsAttributeStoringRep</span></a>), such that we can define attributes for it, the values of which are stored once they are known. A recognition info record always represents a whole binary tree of such records, see the attributes <code class="func">RIFac</code> (<a href="chap4_mj.html#X85D69105867342C7"><span class="RefLink">4.2-9</span></a>) and <code class="func">RIKer</code> (<a href="chap4_mj.html#X85B6D66F7BD0E964"><span class="RefLink">4.2-10</span></a>) below.</p>
 
 <p>The following filters are defined for recognition info records:</p>
 
@@ -586,14 +586,14 @@
 <h5>4.2-31 isone</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; isone</code>( <var class="Arg">ri</var> )</td><td class="tdright">( attribute )</td></tr></table></div>
-<p>This attribute returns a function that tests, whether or not an element of the group is equal to the identity or not. Usually this is just the operation <code class="func">IsOne</code> (<a href="../../../doc/ref/chap31_mj.html#X814D78347858EC13"><span class="RefLink">Reference: IsOne</span></a>) but for projective groups it is a special function returning <code class="code">true</code> for scalar matrices. In generic code, one should always use the result of this attribute to compare an element to the identity such that the code works also for projective groups. Find homomorphism methods usually do not have to set this attribute.</p>
+<p>This attribute returns a function that tests, whether or not an element of the group is equal to the identity or not. Usually this is just the operation <code class="func">IsOne</code> (<a href="https://www.gap-system.org/Manuals/doc/ref/chap31_mj.html#X814D78347858EC13"><span class="RefLink">Reference: IsOne</span></a>) but for projective groups it is a special function returning <code class="code">true</code> for scalar matrices. In generic code, one should always use the result of this attribute to compare an element to the identity such that the code works also for projective groups. Find homomorphism methods usually do not have to set this attribute.</p>
 
 <p><a id="X7D0F06047B88E5CD" name="X7D0F06047B88E5CD"></a></p>
 
 <h5>4.2-32 isequal</h5>
 
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; isequal</code>( <var class="Arg">ri</var> )</td><td class="tdright">( attribute )</td></tr></table></div>
-<p>This attribute returns a function that compares two elements of the group being recognised. Usually this is just the operation <code class="func">EQ</code> (<a href="../../../doc/ref/chap20_mj.html#X79305F9780394190"><span class="RefLink">Reference: Equality and inequality of Booleans</span></a>) but for projective groups it is a special function checking for equality up to a scalar factor. In generic code, one should always use the result of this attribute to compare two elements such that the code works also for projective groups. Find homomorphism methods usually do not have to set this attribute.</p>
+<p>This attribute returns a function that compares two elements of the group being recognised. Usually this is just the operation <code class="func">EQ</code> (<a href="https://www.gap-system.org/Manuals/doc/ref/chap20_mj.html#X79305F9780394190"><span class="RefLink">Reference: Equality and inequality of Booleans</span></a>) but for projective groups it is a special function checking for equality up to a scalar factor. In generic code, one should always use the result of this attribute to compare two elements such that the code works also for projective groups. Find homomorphism methods usually do not have to set this attribute.</p>
 
 <p><a id="X800B9BBE82F24C49" name="X800B9BBE82F24C49"></a></p>
 
