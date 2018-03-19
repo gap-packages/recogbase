@@ -1,6 +1,6 @@
 name: recogbase
 version: 1.2.5
-date: 08/03/2016
+date: 2016-03-08
 description: |
     A framework for group recognition
 
@@ -30,7 +30,7 @@ needed-pkgs:
       url: "https://gap-packages.github.io/orb"
     - name: "FactInt"
       version: ">= 1.5.2"
-      url: "https://stefan-kohl.github.io/factint.html"
+      url: "https://gap-packages.github.io/FactInt"
     - name: "AtlasRep"
       version: ">= 1.4.0"
       url: "http://www.math.rwth-aachen.de/~Thomas.Breuer/atlasrep"
