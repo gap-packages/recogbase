@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Book SYSTEM "gapdoc.dtd">
+
+<Book Name="recogbase">
+<#Include SYSTEM "title.xml">
+<Body>
+
+<E>Warning: This package has been withdrawn.</E>
+Please use the <Package>recog</Package> package instead.
+
+</Body>
+<TheIndex/>
+
+</Book>
+
