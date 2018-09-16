@@ -1,18 +1,18 @@
 #############################################################################
-##  
+##
 ##  PackageInfo.g for the package `recogbase'
 ##
 
 SetPackageInfo( rec(
 
 PackageName := "recogbase",
-Subtitle := "A framework for group recognition",
-Version := "1.2.5",
-Date := "08/03/2016", # dd/mm/yyyy format
+Subtitle := "Withdrawn package, use 'recog' instead",
+Version := "1.3",
+Date := "16/09/2018", # dd/mm/yyyy format
 
 ##  Information about authors and maintainers.
 Persons := [
-  rec( 
+  rec(
     LastName      := "Neunhöffer",
     FirstNames    := "Max",
     IsAuthor      := true,
@@ -26,7 +26,7 @@ Persons := [
     #Place         := "St Andrews",
     #Institution   := "University of St Andrews"
   ),
-  rec( 
+  rec(
     LastName      := "Seress",
     FirstNames    := "Ákos",
     IsAuthor      := true,
@@ -51,24 +51,7 @@ Persons := [
   ),
 ],
 
-##  Status information. Currently the following cases are recognized:
-##    "accepted"      for successfully refereed packages
-##    "deposited"     for packages for which the GAP developers agreed 
-##                    to distribute them with the core GAP system
-##    "dev"           for development versions of packages 
-##    "other"         for all other packages
-##
-# Status := "accepted",
-Status := "deposited",
-
-##  You must provide the next two entries if and only if the status is 
-##  "accepted" because is was successfully refereed:
-# format: 'name (place)'
-# CommunicatedBy := "Mike Atkinson (St. Andrews)",
-#CommunicatedBy := "",
-# format: mm/yyyy
-# AcceptDate := "08/1999",
-#AcceptDate := "",
+Status := "deposited", # TODO: add new status 'withdrawn' ?
 
 SourceRepository := rec(
     Type := "git",
@@ -76,68 +59,39 @@ SourceRepository := rec(
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 PackageWWWHome  := Concatenation( "https://gap-packages.github.io/", ~.PackageName ),
-README_URL      := Concatenation( ~.PackageWWWHome, "/README" ),
+README_URL      := Concatenation( ~.PackageWWWHome, "/README.md" ),
 PackageInfoURL  := Concatenation( ~.PackageWWWHome, "/PackageInfo.g" ),
 ArchiveURL      := Concatenation( ~.SourceRepository.URL,
                                  "/releases/download/v", ~.Version,
                                  "/", ~.PackageName, "-", ~.Version ),
 ArchiveFormats := ".tar.gz .tar.bz2",
 
-AbstractHTML := "<b>Warning:</b> This package is still under development and \
-this version is to be considered a working, but preliminary one. <p/> \
-This package provides a framework to implement group \
-recognition methods in a generic way. In particular, it is suitable \
-for permutation groups, matrix groups, projective groups and blackbox \
-groups. The accompanying <span class=\"pkgname\">recog</span> package \
-contains the necessary methods for actual recognition.",
+AbstractHTML := "<b>Warning:</b> This package has been withdrawn. \
+Please use the <span class=\"pkgname\">recog</span> package instead.",
 
 PackageDoc := rec(
-  BookName  := "recogbase",
+  BookName  := ~.PackageName,
   ArchiveURLSubset := ["doc"],
   HTMLStart := "doc/chap0.html",
   PDFFile   := "doc/manual.pdf",
   SixFile   := "doc/manual.six",
-  LongTitle := "A framework for group recognition",
+  LongTitle := ~.Subtitle,
 ),
 
 Dependencies := rec(
-  GAP := ">=4.7.8",
-  NeededOtherPackages := [
-    ["GAPDoc", ">= 1.2"],
-    ["Forms", ">= 1.2"],
-    ["genss", ">= 1.3"],
-    ["Orb", ">= 3.4"],
-    ["FactInt", ">= 1.5.2"],
-    ["AtlasRep", ">= 1.4.0"],
-  ],
-  SuggestedOtherPackages := [
-    ["recog", ">= 1.2.4"]
-  ],
-  ExternalConditions := []
+  #GAP := ">=4.7.8",
+  NeededOtherPackages := [["recog", ">= 1.3"]],
+  SuggestedOtherPackages := [],
+  ExternalConditions := [],
 ),
 
 AvailabilityTest := ReturnTrue,
 
-##  *Optional*, but recommended: path relative to package root to a file which 
-##  contains as many tests of the package functionality as sensible.
-#TestFile := "tst/testall.g",
-
-##  *Optional*: Here you can list some keyword related to the topic 
+##  *Optional*: Here you can list some keyword related to the topic
 ##  of the package.
 Keywords := ["group recognition", "matrix group recognition",
-"permutation group", "black box group", "composition tree", 
+"permutation group", "black box group", "composition tree",
 "Aschbacher classes", "method selection"],
-
-AutoDoc := rec(
-    TitlePage := rec(
-        Copyright := Concatenation(
-                    "&copyright; 2005-2014 by Max Neunhöffer and Ákos Seress<P/>\n",
-                    "\n",
-                    "This package may be distributed under the terms and conditions of the\n",
-                    "GNU Public License Version 3 or (at your option) any later version.\n"
-                ),
-    )
-),
 
 ));
 
