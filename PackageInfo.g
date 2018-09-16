@@ -8,7 +8,7 @@ SetPackageInfo( rec(
 PackageName := "recogbase",
 Subtitle := "Withdrawn package, use 'recog' instead",
 Version := "1.3",
-Date := "11/09/2018", # dd/mm/yyyy format
+Date := "16/09/2018", # dd/mm/yyyy format
 
 ##  Information about authors and maintainers.
 Persons := [
